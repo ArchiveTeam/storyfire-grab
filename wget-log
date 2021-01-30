@@ -1,0 +1,16 @@
+--2021-01-30 14:54:40--  https://player.vimeo.com/external/505851618.m3u8?s=44d5b4016684cb349f561d8061fcc75011ff3a02
+Resolving player.vimeo.com (player.vimeo.com)... 151.101.36.217
+Connecting to player.vimeo.com (player.vimeo.com)|151.101.36.217|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://skyfire.vimeocdn.com/1612029286-0xab1cc0815e860dc460403b962920276c3599ee9c/efa3968c-fa71-4e91-8801-6970d59dda75/sep/video/5e85423d,5599fc48,16a44b5a,24ff6584,7a3ada79/master.m3u8?absolute=1 [following]
+--2021-01-30 14:54:40--  https://skyfire.vimeocdn.com/1612029286-0xab1cc0815e860dc460403b962920276c3599ee9c/efa3968c-fa71-4e91-8801-6970d59dda75/sep/video/5e85423d,5599fc48,16a44b5a,24ff6584,7a3ada79/master.m3u8?absolute=1
+Resolving skyfire.vimeocdn.com (skyfire.vimeocdn.com)... 151.101.38.109
+Connecting to skyfire.vimeocdn.com (skyfire.vimeocdn.com)|151.101.38.109|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/vnd.apple.mpegurl]
+Saving to: ‘505851618.m3u8?s=44d5b4016684cb349f561d8061fcc75011ff3a02’
+
+505851618.m3u8?s=44d5b4016684cb349f561d8061fcc75011ff3a02       [<=>                                                                                                                                       ]       0  --.-KB/s               505851618.m3u8?s=44d5b4016684cb349f561d8061fcc75011ff3a02       [ <=>                                                                                                                                      ]   2.12K  --.-KB/s    in 0.001s  
+
+2021-01-30 14:54:40 (3.93 MB/s) - ‘505851618.m3u8?s=44d5b4016684cb349f561d8061fcc75011ff3a02’ saved [2175]
+
