@@ -52,7 +52,7 @@ if not WGET_AT:
 VERSION = '20210130.01'
 USER_AGENT = 'Archive Team'
 TRACKER_ID = 'storyfire'
-TRACKER_HOST = 'trackerproxy.archiveteam.org'
+TRACKER_HOST = 'legacy-api.arpa.li'
 MULTI_ITEM_SIZE = 1
 
 
