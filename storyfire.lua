@@ -365,14 +365,14 @@ wget.callbacks.httploop_result = function(url, err, http_stat)
 
   if abortgrab then
     abort_item()
-    return wget.actions.EXIT
+    return wget.actions.ABORT
   end
 
   if status_code == 0
     or (status_code > 400 and status_code ~= 404) then
     io.stdout:write("Server returned " .. http_stat.statcode .. " (" .. err .. "). Sleeping.\n")
     io.stdout:flush()
-    local maxtries = 1
+    local maxtries = 6
     if not allowed(url["url"], nil) then
       maxtries = 3
     end
@@ -381,7 +381,7 @@ wget.callbacks.httploop_result = function(url, err, http_stat)
       io.stdout:flush()
       tries = 0
       abort_item()
-      return wget.actions.EXIT
+      return wget.actions.ABORT
     else
       os.execute("sleep " .. math.floor(math.pow(2, tries)))
       tries = tries + 1
@@ -439,6 +439,7 @@ end
 wget.callbacks.before_exit = function(exit_status, exit_status_string)
   if abortgrab then
     abort_item()
+    return wget.exits.IO_FAIL
   end
   return exit_status
 end
